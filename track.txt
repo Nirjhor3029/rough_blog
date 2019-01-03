@@ -2,3 +2,8 @@
 https://quantizd.com/facebook-php-sdk-with-laravel/
 
 https://termsfeed.com/privacy-policy/cba0de9014a34edfec20ffb1de472852
+
+======== .env files variable not match with facebook.php
+FACEBOOK_APP_ID=1838564549605881
+FACEBOOK_APP_SECRET=2f1a55ace69addd95abf28333b5d86c4
+========================================================
