@@ -66,7 +66,15 @@
                         </div>
                     </form>
                 </div>
+
+                <div class="card-header">Login with Facebook</div>
+                <div class="card-body">
+                    <a class="btn btn-primary" href="{{route('login.facebook')}}">
+                        Facebook Login
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 </div>

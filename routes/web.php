@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/login/facebook', 'Auth\LoginController@redirectToFacebookProvider')->name('login.facebook');
+
+Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderFacebookCallback')->name('login.facebook.callback');
+
+
+Route::group(['middleware' => ['auth']], function(){
+
+    Route::get('/user', 'GraphController@retrieveUserProfile');
+
+});
